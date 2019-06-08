@@ -1,26 +1,4 @@
-alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-length = len(alphabet) -1
-output = []
-inputstring = "Vrphwklqj phdqlqjixo"
-for i in range(len(inputstring)):
     
-    if inputstring[i].isalpha():
-        index = alphabet.index(inputstring[i].lower())
-        
-        if index >= length-2:
-            index = index - length - 1
-        output.append(alphabet[index - 3])
-    else:
-        output.append(inputstring[i])
-print ''.join(output)
-
-
-
---------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-        
 
 #write a program (in python, javascript or ruby) to populate and then sort a randomly distributed list of 1 million integers, each 
 integer having a value >= 1 and <= 100 without using any builtin/external library/function for sorting.your program should carefully 
